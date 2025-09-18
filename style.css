@@ -1,12 +1,17 @@
 body {
     margin: auto;
     font-family: Arial, sans-serif;
-    width: 50em;
+    width: 40em;
     background-color: black;
     color: white;
 }
 
 .container {
+    margin: auto;
+    position: relative;
+    left: -25%;
+    width: 150%;
+
     display: flex;
     min-height: 100vh;
 }
