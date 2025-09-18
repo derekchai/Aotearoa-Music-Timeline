@@ -1,16 +1,17 @@
 body {
     margin: auto;
     font-family: Arial, sans-serif;
-    width: 40em;
+    width: 30em;
     background-color: black;
     color: white;
 }
 
 .scroller {
     margin: auto;
+    margin: 3em auto;
     position: relative;
-    left: -25%;
-    width: 150%;
+    left: -50%;
+    width: 200%;
     min-height: 100vh;
 }
 
@@ -38,7 +39,6 @@ body {
 /* Scrolling steps on the right */
 .steps {
     width: 100%;
-    /* width: 30%; */
 }
 
 .step {
