@@ -6,7 +6,7 @@ body {
     color: white;
 }
 
-.container {
+.scroller {
     margin: auto;
     position: relative;
     left: -25%;
