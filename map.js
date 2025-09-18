@@ -1,4 +1,10 @@
-var map = L.map("map").setView([53, 12], 5);
+var map = L.map(
+    "map",
+    { 
+        zoomControl: false, 
+        scrollWheelZoom: false,
+    }
+).setView([53, 12], 5);
 
 // Style URL format in XYZ PNG format; see our documentation for more options
 L.tileLayer(
