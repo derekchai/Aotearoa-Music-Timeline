@@ -12,6 +12,20 @@ body {
     width: 30em;
 }
 
+#photo-header > h1 {
+    position: absolute;
+    bottom: 0px;
+
+    font-size: 48pt;
+
+    background-color: white;
+    color: black;
+
+    box-decoration-break: clone;
+    /* display: inline; */
+    z-index: 10;
+}
+
 #header-background-image {
     width: 100%;
     position: relative;
