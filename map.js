@@ -1,22 +1,43 @@
-var map = L.map(
-    "map",
-    { 
-        zoomControl: false, 
+// Constants
+const TILE_LAYER_URL =
+    "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png";
+const ATTRIBUTION =
+    '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, ' 
+    + '&copy; <a href="https://openmaptiles.org/" target="_blank">' 
+    + 'OpenMapTiles</a> &copy; '
+    + '<a href="https://www.openstreetmap.org/copyright" target="_blank">' 
+    + 'OpenStreetMap</a>';
+
+const NEW_ZEALAND_COORDINATES = [-40.9006, 174.886];
+
+const DUNEDIN_COORDINATES = [-45.8795, 170.5006];
+const AUCKLAND_COORDINATES = [-36.8509, 174.7645];
+
+// Functions
+function flyTo(coordinates, zoom) {
+    map.flyTo(coordinates, zoom, {
+        animate: true,
+        duration: 1,
+    })
+}
+
+function setUpMap() {
+    // Set up map
+    map = L.map("map", {
+        zoomControl: false,
         scrollWheelZoom: false,
-    }
-).setView([53, 12], 5);
+    }).setView([53, 12], 5);
 
-// Style URL format in XYZ PNG format; see our documentation for more options
-L.tileLayer(
-    "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png",
-    {
+    // Add tile layer
+    L.tileLayer(TILE_LAYER_URL, {
         maxZoom: 20,
-        attribution:
-            '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
-    },
-).addTo(map);
+        attribution: ATTRIBUTION,
+    }).addTo(map);
+}
 
-L.marker([-36.8484, 174.7622]).addTo(map).bindPopup("Sky Tower").openPopup();
+// Setup
+var map;
+setUpMap();
 
 const scroller = scrollama();
 
@@ -27,20 +48,11 @@ scroller
     })
     .onStepEnter((response) => {
         if (response.index == 1) {
-            map.flyTo([-45.8795, 170.5006], 13, {
-                animate: true,
-                duration: 1,
-            });
+            flyTo(DUNEDIN_COORDINATES, 13);
         } else if (response.index == 2) {
-            map.flyTo([-36.8509, 174.7645], 13, {
-                animate: true,
-                duration: 1,
-            });
+            flyTo(AUCKLAND_COORDINATES, 13);
         } else if (response.index == 0) {
-            map.flyTo([-40.9006, 174.886], 5, {
-                animate: true,
-                duration: 1,
-            });
+            flyTo(NEW_ZEALAND_COORDINATES, 5);
         }
 
         if (response.index <= 2) {
@@ -55,9 +67,6 @@ scroller
             .querySelectorAll(".step")
             .forEach((step) => step.classList.remove("active"));
         response.element.classList.add("active");
-
-        // const content = response.element.getAttribute('data-content');
-        // document.getElementById('sticky-content').textContent = content;
     });
 
 // Handle window resize
