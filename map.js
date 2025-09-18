@@ -2,11 +2,11 @@
 const TILE_LAYER_URL =
     "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png";
 const ATTRIBUTION =
-    '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, ' 
-    + '&copy; <a href="https://openmaptiles.org/" target="_blank">' 
-    + 'OpenMapTiles</a> &copy; '
-    + '<a href="https://www.openstreetmap.org/copyright" target="_blank">' 
-    + 'OpenStreetMap</a>';
+    '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, ' +
+    '&copy; <a href="https://openmaptiles.org/" target="_blank">' +
+    "OpenMapTiles</a> &copy; " +
+    '<a href="https://www.openstreetmap.org/copyright" target="_blank">' +
+    "OpenStreetMap</a>";
 
 const NEW_ZEALAND_COORDINATES = [-40.9006, 174.886];
 
@@ -18,15 +18,23 @@ function flyTo(coordinates, zoom) {
     map.flyTo(coordinates, zoom, {
         animate: true,
         duration: 1,
-    })
+    });
 }
 
 function setUpMap() {
     // Set up map
-    map = L.map("map", {
+    map = new L.Map("map", {
         zoomControl: false,
         scrollWheelZoom: false,
-    }).setView([53, 12], 5);
+    })
+        .setView([53, 12], 5)
+        .setActiveArea({
+            position: "relative",
+            top: "0px",
+            left: "-10%",
+            right: "%",
+            height: "100%",
+        });
 
     // Add tile layer
     L.tileLayer(TILE_LAYER_URL, {
