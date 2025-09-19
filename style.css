@@ -13,14 +13,24 @@ body {
     width: 30em;
 }
 
-#photo-header > h1 {
+#photo-header #title {
     position: absolute;
     bottom: 0px;
+    padding-left: 1em;
 
-    font-size: 64pt;
-    color: red;
-    font-family: "Aujournuit";
     z-index: 10;
+}
+
+#photo-header #title > h1 {
+    font-size: 96pt;
+    font-family: "Aujournuit";
+}
+
+#photo-header #title > p {
+    font-size: 32pt;
+    font-family: "Aujournuit";
+    font-style: italic;
+    margin-top: -2.5em;
 }
 
 #header-background-image {
