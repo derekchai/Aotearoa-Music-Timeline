@@ -8,7 +8,7 @@ body {
     line-height: 1.6;
 }
 
-#main {
+.main {
     margin: auto;
     width: 30em;
 }
@@ -80,8 +80,8 @@ img.black-and-white {
     margin: auto;
     margin: 3em auto;
     position: relative;
-    left: -50%;
-    width: 200%;
+    /* left: -50%; */
+    width: 100%;
     min-height: 100vh;
 }
 
@@ -116,12 +116,12 @@ img.black-and-white {
     height: 100vh;
 
     margin-left: auto;
-    margin-right: 0%;
+    margin-right: 3em;
     right: 0%;
     width: 30%;
     text-align: right;
 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     transition: background-color 0.3s;
 }
 
