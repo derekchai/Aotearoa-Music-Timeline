@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-left: 1em;
 
     background-image: var(--bw-gradient), url("images/background.jpg");
     filter: grayscale(100%);
