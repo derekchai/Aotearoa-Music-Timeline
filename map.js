@@ -24,7 +24,6 @@ function flyTo(coordinates, zoom) {
 function setUpMap() {
     // Set up map
     map = new L.Map("map", {
-        zoomControl: false,
         scrollWheelZoom: false,
     })
         .setView([53, 12], 5)
