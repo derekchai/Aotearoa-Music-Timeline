@@ -1,6 +1,7 @@
 // Constants
 const TILE_LAYER_URL =
-    "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png";
+    // "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png";
+    "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
 const ATTRIBUTION =
     '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, ' +
     '&copy; <a href="https://openmaptiles.org/" target="_blank">' +
@@ -55,14 +56,22 @@ scroller
         offset: 0.5,
     })
     .onStepEnter((response) => {
-        if (response.index == 1) {
-            flyTo(DUNEDIN_COORDINATES, 13);
-        } else if (response.index == 2) {
-            flyTo(AUCKLAND_COORDINATES, 13);
-        } else if (response.index == 0) {
-            flyTo(NEW_ZEALAND_COORDINATES, 5);
-        } else {
+        switch (response.index) {
+        case 0:
             flyTo(WORLD_COORDINATES, 2);
+            break;
+        case 1:
+            map.flyTo(DUNEDIN_COORDINATES, 13, {
+                animate: true,
+                duration: 7,
+            });
+            break;
+        case 3:
+            flyTo(DUNEDIN_COORDINATES, 13);
+            break;
+        default: 
+            flyTo(WORLD_COORDINATES, 2);
+            break;
         }
 
         if (response.index <= 2) {
