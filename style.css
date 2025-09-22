@@ -12,6 +12,11 @@ body {
     line-height: 1.6;
 }
 
+cite {
+    font-style: normal;
+    color: gray;
+}
+
 .main {
     margin: auto;
     width: 30em;
