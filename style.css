@@ -20,6 +20,10 @@ cite {
 .main {
     margin: auto;
     width: 30em;
+
+    > p {
+        text-indent: 2em;
+    }
 }
 
 #photo-header {
