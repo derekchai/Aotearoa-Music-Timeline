@@ -8,6 +8,7 @@ const ATTRIBUTION =
     '<a href="https://www.openstreetmap.org/copyright" target="_blank">' +
     "OpenStreetMap</a>";
 
+const WORLD_COORDINATES = [0, 0];
 const NEW_ZEALAND_COORDINATES = [-40.9006, 174.886];
 
 const DUNEDIN_COORDINATES = [-45.8795, 170.5006];
@@ -26,7 +27,7 @@ function setUpMap() {
     map = new L.Map("map", {
         scrollWheelZoom: false,
     })
-        .setView([53, 12], 5)
+        .setView(WORLD_COORDINATES, 2)
         .setActiveArea({
             position: "relative",
             top: "0px",
@@ -60,6 +61,8 @@ scroller
             flyTo(AUCKLAND_COORDINATES, 13);
         } else if (response.index == 0) {
             flyTo(NEW_ZEALAND_COORDINATES, 5);
+        } else {
+            flyTo(WORLD_COORDINATES, 2);
         }
 
         if (response.index <= 2) {
