@@ -26,6 +26,17 @@ cite {
     }
 }
 
+.timeline-date {
+    top: 2em;
+    margin-left: 3em;
+    align-items: end;
+    position: sticky;
+    display: inline-block;
+    font-size: 2em;
+    background-color: white;
+    color: black;
+}
+
 #photo-header {
     height: 100vh;
     display: flex;
