@@ -57,21 +57,21 @@ scroller
     })
     .onStepEnter((response) => {
         switch (response.index) {
-        case 0:
-            flyTo(WORLD_COORDINATES, 2);
-            break;
-        case 1:
-            map.flyTo(DUNEDIN_COORDINATES, 13, {
-                animate: true,
-                duration: 7,
-            });
-            break;
-        case 3:
-            flyTo(DUNEDIN_COORDINATES, 13);
-            break;
-        default: 
-            flyTo(WORLD_COORDINATES, 2);
-            break;
+            case 0:
+                flyTo(WORLD_COORDINATES, 2);
+                break;
+            case 1:
+                map.flyTo(DUNEDIN_COORDINATES, 13, {
+                    animate: true,
+                    duration: 7,
+                });
+                break;
+            case 3:
+                flyTo(DUNEDIN_COORDINATES, 13);
+                break;
+            default:
+                flyTo(WORLD_COORDINATES, 2);
+                break;
         }
 
         if (response.index <= 2) {
