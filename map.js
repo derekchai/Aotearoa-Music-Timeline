@@ -63,7 +63,7 @@ scroller
             case 1:
                 map.flyTo(DUNEDIN_COORDINATES, 13, {
                     animate: true,
-                    duration: 7,
+                    duration: 5,
                 });
                 break;
             case 3:
