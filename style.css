@@ -70,8 +70,7 @@ header {
 }
 
 .scroller {
-    margin: auto;
-    margin: 3em auto;
+    margin: 20vh auto;
     position: relative;
     width: 100%;
     min-height: 100vh;
