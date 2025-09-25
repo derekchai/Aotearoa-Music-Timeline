@@ -29,6 +29,10 @@ cite {
     > p {
         text-indent: 2em;
     }
+
+    @media screen and (max-width: 600px) {
+        width: 80%;
+    }
 }
 
 .timeline-date {
@@ -107,13 +111,20 @@ header {
     height: 100vh;
 
     margin-left: auto;
-    margin-right: 3em;
+    margin-right: 5%;
     right: 0%;
     width: 30%;
     text-align: right;
 
-    font-size: 1.2rem;
+    font-size: calc(0.8em + 0.5vw);
     transition: background-color 0.3s;
+
+    @media screen and (max-width: 600px) {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
 }
 
 .step span {
