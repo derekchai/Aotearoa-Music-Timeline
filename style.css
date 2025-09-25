@@ -59,7 +59,7 @@ cite {
     background-size: cover;
     background-position: center;
 
-    font-size: 3em;
+    font-size: calc(2em + 1vw);
 
     h1 {
         margin-bottom: -0.5em;
