@@ -34,10 +34,10 @@ cite {
 
 .main {
     margin: auto;
-    width: 30em;
+    width: 30rem;
 
     > p {
-        text-indent: 2em;
+        text-indent: 2rem;
     }
 
     @media screen and (max-width: 600px) {
@@ -61,7 +61,7 @@ cite {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-left: 1em;
+    padding-left: 1rem;
 
     background-image: var(--bw-gradient), url("images/background.jpg");
     filter: grayscale(100%);
@@ -72,7 +72,7 @@ cite {
     font-size: x-large;
 
     h1 {
-        margin-bottom: -0.5em;
+        margin-bottom: -0.5rem;
     }
     p {
         font-style: italic;
@@ -80,7 +80,7 @@ cite {
 }
 
 header {
-    margin: 4em 0em;
+    margin: 4rem 0em;
 }
 
 .scroller {
