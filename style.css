@@ -91,7 +91,7 @@ header {
     width: 100%;
     height: 100vh; /* full height of viewport */
     background-color: black;
-    display: flex;
+    /* display: inline; */
     align-items: center;
     justify-content: center;
     font-size: 2rem;
@@ -100,14 +100,27 @@ header {
     box-sizing: border-box;
 
     figure>img {
-        height: 70vh;
+        height: 60vh;
         border: 5px solid white;
         box-shadow: 0px 0px 10px black;
+
+        @media screen and (max-width: 600px) {
+            height: 40vh;
+        }
     }
 
     #figure-enemy {
-        transform: rotate(-5deg);
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        transform: rotate(-5deg) translate(-50%, -50%);
+    }
 
+    #figure-enemy2 {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: rotate(8deg) translate(-50%, -50%);
     }
 }
 
@@ -121,7 +134,7 @@ header {
     width: 100%;
 }
 
-.step {
+.step, .step2 {
     position: relative;
     height: 100vh;
 
