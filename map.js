@@ -66,9 +66,6 @@ scroller
                     duration: 5,
                 });
                 break;
-            case 3:
-                flyTo(DUNEDIN_COORDINATES, 13);
-                break;
             default:
                 flyTo(WORLD_COORDINATES, 2);
                 break;
