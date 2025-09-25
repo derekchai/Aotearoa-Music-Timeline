@@ -5,11 +5,13 @@ scroller2.setup({
     })
     .onStepEnter((response) => {
         switch (response.index) {
-            case 0: 
-                hide('figure-enemy2');
-                break;
             case 1:
+                hide('figure-enemy3')
                 show('figure-enemy2')
+                break;
+            case 2:
+                show('figure-enemy2')
+                show('figure-enemy3')
                 break;
             default:
                 hide('figure-enemy2')

@@ -122,6 +122,13 @@ header {
         left: 35%;
         transform: rotate(8deg) translate(-50%, -50%);
     }
+
+    #figure-enemy3 {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: rotate(-12deg) translate(-50%, -50%);
+    }
 }
 
 #map {
