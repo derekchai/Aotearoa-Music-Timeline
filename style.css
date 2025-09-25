@@ -26,6 +26,11 @@ cite {
     color: gray;
 }
 
+.highlight-yellow {
+    background-color: yellow;
+    color: black;
+}
+
 .main {
     margin: auto;
     width: 30em;
