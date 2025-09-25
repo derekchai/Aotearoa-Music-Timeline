@@ -38,9 +38,10 @@ function setUpMap() {
         });
 
     // Add tile layer
-    L.tileLayer(TILE_LAYER_URL, {
+    L.tileLayer.grayscale(TILE_LAYER_URL, {
         maxZoom: 20,
         attribution: ATTRIBUTION,
+        fadeAnimation: false,
     }).addTo(map);
 }
 
