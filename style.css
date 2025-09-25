@@ -13,6 +13,10 @@ body {
     line-height: 1.6;
 }
 
+label {
+    font-style: italic;
+}
+
 cite {
     font-style: normal;
     color: gray;
