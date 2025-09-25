@@ -15,6 +15,7 @@ scroller2.setup({
                 break;
             default:
                 hide('figure-enemy2')
+                hide('figure-enemy3')
                 break;
         }
     });
