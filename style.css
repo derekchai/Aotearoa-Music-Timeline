@@ -184,3 +184,9 @@ header {
     opacity: 0;
     transition: visibility 0s 0.2s, opacity 0.2s ease-in-out;
 }
+
+.timeline-node {
+    background: blue;
+    height: 10px;
+    width: 50px;
+}

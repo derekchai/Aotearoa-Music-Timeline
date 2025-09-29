@@ -1,9 +1,14 @@
+const indicator = document.getElementById("indicator");
+
 const scroller2 = scrollama();
 scroller2.setup({
         step: ".step2",
         offset: 0.5,
     })
     .onStepEnter((response) => {
+        let nodes = document.getElementsByClassName("timeline-node");
+        
+        indicator.style.top = nodes[response.index].offsetTop + "px";
         switch (response.index) {
             case 1:
                 hide('figure-enemy3')
@@ -29,4 +34,4 @@ function show(id) {
     document.getElementById(id).classList.add('visible');
 }
 
-window.addEventListener("resize", scroller.resize);
+window.addEventListener("resize", scroller2.resize);
