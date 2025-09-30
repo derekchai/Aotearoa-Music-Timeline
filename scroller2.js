@@ -7,8 +7,13 @@ scroller2.setup({
     })
     .onStepEnter((response) => {
         let nodes = document.getElementsByClassName("timeline-node");
-        
         indicator.style.top = nodes[response.index].offsetTop + "px";
+        
+        for (let node of nodes) {
+            node.classList.remove('active')
+        }
+        nodes[response.index].classList.add('active')
+        
         switch (response.index) {
             case 1:
                 hide('figure-enemy3')

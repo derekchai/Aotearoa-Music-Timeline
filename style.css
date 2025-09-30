@@ -204,8 +204,21 @@ header {
     }
 
     .timeline-node {
-        background: blue;
         height: 10px;
-        width: 50px;
+        text-align: left;
+
+        span {
+            transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+            opacity: 0.6;
+            padding-left: 1em;
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    .timeline-node.active span {
+        background-color: yellow;
+        color: black;
+        opacity: 1;
     }
 }
