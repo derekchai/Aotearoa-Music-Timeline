@@ -1,4 +1,3 @@
-const indicator = document.getElementById("indicator");
 
 const scroller2 = scrollama();
 scroller2.setup({
@@ -7,7 +6,6 @@ scroller2.setup({
     })
     .onStepEnter((response) => {
         let nodes = document.getElementsByClassName("timeline-node");
-        indicator.style.top = nodes[response.index].offsetTop + "px";
         
         for (let node of nodes) {
             node.classList.remove('active')
