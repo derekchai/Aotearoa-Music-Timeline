@@ -187,6 +187,10 @@ header {
 }
 
 #timeline {
+    @media screen and (max-width: 600px) {
+        visibility: hidden;
+    }
+    
     position: sticky;
     display: flex;
     flex-direction: column;
