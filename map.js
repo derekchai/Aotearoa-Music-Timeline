@@ -26,6 +26,11 @@ function flyTo(coordinates, zoom) {
     });
 }
 
+function removeMarkers() {
+    map.removeLayer(uoa);
+    map.removeLayer(aut);
+}
+
 function setUpMap() {
     // Set up map
     map = new L.Map("map", {
@@ -62,15 +67,12 @@ scroller
     .onStepEnter((response) => {
         switch (response.index) {
             case 0:
-                map.removeLayer(uoa);
-                map.removeLayer(aut);
+                removeMarkers();
                 flyTo(WORLD_COORDINATES, 2);
                 break;
 
             case 1:
-                map.removeLayer(uoa);
-                map.removeLayer(aut);
-
+                removeMarkers();
                 map.flyTo(DUNEDIN_COORDINATES, 13, {
                     animate: true,
                     duration: 5,
@@ -79,19 +81,16 @@ scroller
 
             case 2:
                 flyTo(ALBERT_PARK_COORDINATES, 16);
+
+                // Add markers
                 uoa = L.marker(UOA_COORDINATES).addTo(map);
                 aut = L.marker(AUT_COORDINATES).addTo(map);
-
-
                 uoa.bindPopup("<b>The Scavengers</b><br>1977 The University of Auckland").openPopup();
                 aut.bindPopup("<b>The Suburban Reptiles</b><br>1977 Auckland Technical Institute").openPopup();
-
                 break;
                 
             default:
-                map.removeLayer(uoa);
-                map.removeLayer(aut);
-
+                removeMarkers();
                 flyTo(WORLD_COORDINATES, 2);
                 break;
         }
