@@ -25,9 +25,7 @@ body {
     margin: auto;
     width: 30rem;
 
-    > p {
-        text-indent: 2rem;
-    }
+    > p { text-indent: 2rem; }
 
     @media screen and (max-width: 600px) {
         width: 80%;
@@ -44,17 +42,6 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 0.2s, opacity 0.2s ease-in-out;
-}
-
-.timeline-date {
-    top: 2em;
-    margin-left: 3em;
-    align-items: end;
-    position: sticky;
-    display: inline-block;
-    font-size: large;
-    background-color: white;
-    color: black;
 }
 
 /* MARK: Header
@@ -93,12 +80,12 @@ header { margin: 4rem 0em; }
     position: sticky;
     top: 0;
     width: 100%;
-    height: 100vh; /* full height of viewport */
+    height: 100vh; 
     background-color: black;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0; /* remove padding so map can fit */
+    padding: 0; 
     box-sizing: border-box;
 
     figure > img {
@@ -135,10 +122,9 @@ header { margin: 4rem 0em; }
 
 #map {
     width: 100%;
-    height: 100%; /* fill the sticky panel */
+    height: 100%; 
 }
 
-/* Scrolling steps on the right */
 .steps {
     width: 100%;
 }
