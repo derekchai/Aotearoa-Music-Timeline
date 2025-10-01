@@ -1,7 +1,7 @@
 // Constants
 const TILE_LAYER_URL =
-    // "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png";
-    "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+    "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png";
+    // "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
 const ATTRIBUTION =
     '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, ' +
     '&copy; <a href="https://openmaptiles.org/" target="_blank">' +
