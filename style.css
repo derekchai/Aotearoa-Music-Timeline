@@ -4,6 +4,11 @@
     --bw-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), black);
 }
 
+figcaption { font-size: small; }
+label { font-style: italic; }
+cite { font-style: normal; color: gray; }
+.highlight-yellow { background-color: yellow; color: black; }
+
 body {
     background-color: black;
     margin: 0px;
@@ -14,24 +19,6 @@ body {
     color: white;
     line-height: 1.6;
     font-size: medium;
-}
-
-figcaption {
-    font-size: small;
-}
-
-label {
-    font-style: italic;
-}
-
-cite {
-    font-style: normal;
-    color: gray;
-}
-
-.highlight-yellow {
-    background-color: yellow;
-    color: black;
 }
 
 .main {
@@ -87,17 +74,11 @@ cite {
 
     font-size: x-large;
 
-    h1 {
-        margin-bottom: -0.5rem;
-    }
-    p {
-        font-style: italic;
-    }
+    h1 { margin-bottom: -0.5rem; }
+    p { font-style: italic; }
 }
 
-header {
-    margin: 4rem 0em;
-}
+header { margin: 4rem 0em; }
 
 /* MARK: Scrollers
  */
