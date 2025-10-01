@@ -153,8 +153,7 @@ header {
     margin-left: auto;
     margin-right: 5%;
     right: 0%;
-    width: 30%;
-    text-align: right;
+    width: 20%;
 
     font-size: medium;
     transition: background-color 0.3s;
@@ -168,10 +167,12 @@ header {
 }
 
 .step span {
+    padding: 5px;
+    display: block;
+
     background: white;
     color: black;
-    box-decoration-break: clone;
-    display: inline;
+    outline: 1px solid black;
 }
 
 .step2 span {
