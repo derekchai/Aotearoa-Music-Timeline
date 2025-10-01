@@ -27,8 +27,12 @@ function flyTo(coordinates, zoom) {
 }
 
 function removeMarkers() {
+    if (!markersVisible) {
+        return;
+    }
     map.removeLayer(uoa);
     map.removeLayer(aut);
+    markersVisible = false;
 }
 
 function setUpMap() {
@@ -55,6 +59,7 @@ function setUpMap() {
 
 // Setup
 var map, uoa, aut;
+var markersVisible = false;
 setUpMap();
 
 const scroller = scrollama();
@@ -87,6 +92,7 @@ scroller
                 aut = L.marker(AUT_COORDINATES).addTo(map);
                 uoa.bindPopup("<b>The Scavengers</b><br>1977 The University of Auckland").openPopup();
                 aut.bindPopup("<b>The Suburban Reptiles</b><br>1977 Auckland Technical Institute").openPopup();
+                markersVisible = true;
                 break;
                 
             default:
