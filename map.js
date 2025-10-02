@@ -117,14 +117,6 @@ scroller
                 break;
         }
 
-        // if (response.index <= 2) {
-        //     document.getElementById("map").classList.add("visible");
-        //     document.getElementById("map").classList.remove("hidden");
-        // } else {
-        //     document.getElementById("map").classList.remove("visible");
-        //     document.getElementById("map").classList.add("hidden");
-        // }
-
         document
             .querySelectorAll(".step")
             .forEach((step) => step.classList.remove("active"));
