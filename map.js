@@ -17,6 +17,7 @@ const AUCKLAND_COORDINATES = [-36.8509, 174.7645];
 const UOA_COORDINATES= [-36.850135, 174.769281];
 const AUT_COORDINATES = [-36.853029, 174.766415]
 const ALBERT_PARK_COORDINATES = [-36.851231, 174.768291];
+const ZWINES_COORDINATES = [-36.847520, 174.764527];
 
 // Functions
 function flyTo(coordinates, zoom) {
@@ -27,12 +28,16 @@ function flyTo(coordinates, zoom) {
 }
 
 function removeMarkers() {
-    if (!markersVisible) {
-        return;
+    if (markersVisible) {
+        map.removeLayer(uoa);
+        map.removeLayer(aut);
+        markersVisible = false;
     }
-    map.removeLayer(uoa);
-    map.removeLayer(aut);
-    markersVisible = false;
+
+    if (zwinesVisible) {
+        map.removeLayer(zwines);
+        zwinesVisible = false;
+    }
 }
 
 function setUpMap() {
@@ -58,8 +63,9 @@ function setUpMap() {
 }
 
 // Setup
-var map, uoa, aut;
+var map, uoa, aut, zwines;
 var markersVisible = false;
+var zwinesVisible = false;
 setUpMap();
 
 const scroller = scrollama();
@@ -88,11 +94,21 @@ scroller
                 flyTo(ALBERT_PARK_COORDINATES, 16);
 
                 // Add markers
+                removeMarkers();
                 uoa = L.marker(UOA_COORDINATES).addTo(map);
                 aut = L.marker(AUT_COORDINATES).addTo(map);
                 uoa.bindPopup("<b>The Scavengers</b><br>1977 The University of Auckland").openPopup();
                 aut.bindPopup("<b>The Suburban Reptiles</b><br>1977 Auckland Technical Institute").openPopup();
                 markersVisible = true;
+                break;
+            
+            case 3: 
+                flyTo(ZWINES_COORDINATES, 16);
+
+                removeMarkers();
+                zwines = L.marker(ZWINES_COORDINATES).addTo(map);
+                zwines.bindPopup("<b>Zwines</b><br>Nightclub; opened 1978").openPopup();
+                zwinesVisible = true;
                 break;
                 
             default:
@@ -101,13 +117,13 @@ scroller
                 break;
         }
 
-        if (response.index <= 2) {
-            document.getElementById("map").classList.add("visible");
-            document.getElementById("map").classList.remove("hidden");
-        } else {
-            document.getElementById("map").classList.remove("visible");
-            document.getElementById("map").classList.add("hidden");
-        }
+        // if (response.index <= 2) {
+        //     document.getElementById("map").classList.add("visible");
+        //     document.getElementById("map").classList.remove("hidden");
+        // } else {
+        //     document.getElementById("map").classList.remove("visible");
+        //     document.getElementById("map").classList.add("hidden");
+        // }
 
         document
             .querySelectorAll(".step")
