@@ -1,3 +1,7 @@
+let order = [0, 1, 1, 2]
+// 0: 1977 The Enemy forms
+// 1: 1978 First Wave bands form
+// 2: TEMP
 
 const scroller2 = scrollama();
 scroller2.setup({
@@ -10,7 +14,8 @@ scroller2.setup({
         for (let node of nodes) {
             node.classList.remove('active')
         }
-        nodes[response.index].classList.add('active')
+
+        nodes[order[response.index]].classList.add('active')
         
         switch (response.index) {
             case 1:
