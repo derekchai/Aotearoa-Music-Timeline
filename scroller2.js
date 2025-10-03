@@ -1,4 +1,4 @@
-let order = [0, 1, 1, 2]
+let order = [0, 1, 2, 3]
 // 0: 1977 The Enemy forms
 // 1: 1978 First Wave bands form
 // 2: TEMP
