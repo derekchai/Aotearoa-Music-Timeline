@@ -116,10 +116,7 @@ header { margin: 4rem 0em; }
         position: absolute;
         top: 50%;
         left: 35%;
-        transform: rotate(2deg) translate(-50%, -50%);
-        img {
-            transform: scale(70%);
-        }
+        transform: rotate(-3deg) translate(-50%, -50%) scale(70%);
     }
 }
 
@@ -166,6 +163,11 @@ header { margin: 4rem 0em; }
     @media screen and (max-width: 600px) {
         background-color: black;
     }
+}
+
+.step2 > p {
+    font-style: italic;
+    font-size: smaller;
 }
 
 /* MARK: Timeline
