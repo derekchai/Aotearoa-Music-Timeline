@@ -112,11 +112,14 @@ header { margin: 4rem 0em; }
         transform: rotate(6deg) translate(-50%, -50%);
     }
 
-    #figure-enemy3 {
+    #figure-dodd {
         position: absolute;
         top: 50%;
         left: 35%;
-        transform: rotate(-12deg) translate(-50%, -50%);
+        transform: rotate(2deg) translate(-50%, -50%);
+        img {
+            transform: scale(70%);
+        }
     }
 }
 

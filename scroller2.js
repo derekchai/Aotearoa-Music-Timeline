@@ -18,17 +18,25 @@ scroller2.setup({
         nodes[order[response.index]].classList.add('active')
         
         switch (response.index) {
+            case 0:
+                show('figure-enemy')
+                hide('figure-grigg')
+                hide('figure-dodd')
+                break;
             case 1:
-                hide('figure-enemy3')
+                show('figure-enemy')
                 show('figure-grigg')
+                hide('figure-dodd')
                 break;
             case 2:
+                show('figure-enemy')
                 show('figure-grigg')
-                show('figure-enemy3')
+                show('figure-dodd')
                 break;
             default:
+                show('figure-enemy')
                 hide('figure-grigg')
-                hide('figure-enemy3')
+                hide('figure-dodd')
                 break;
         }
     });
