@@ -2,6 +2,7 @@ const BENEFICIARIES_HALL = [-45.869233, 170.504875];
 const CAPTAIN_COOK_HOTEL = [-45.866952, 170.508491];
 const CORONATION_HALL = [-45.858126, 170.500402];
 const EMPIRE_TAVERN = [-45.880190, 170.499983];
+const OTAGO_UNIVERSITY = [-45.864566, 170.514835];
 
 // Set up map
 var venues_map = new L.Map("venues_map", {
@@ -42,7 +43,14 @@ addPopup(EMPIRE_TAVERN,
     + "2017)</cite>; Dr. Graeme Downes (The Verlaines) compares the Empire "
     + "to \"what the Cavern Club is to Liverpool in terms of what it helped "
     + "spawn\"<cite> (Heritage New Zealand n.d.)</cite>."
-)
+);
+addPopup(OTAGO_UNIVERSITY,
+    "<b>University of Otago</b><br>"
+    + "In addition to being a venue for performances by bands the likes of "
+    + "The Verlaines and The Stones<cite> (Robertson 1991, 33)</cite>, the "
+    + "University itself was a birthplace of many Dunedin sound bands, and "
+    + "home to many former Dunedin sound musicians as academics."
+);
 
 function addPopup(coordinates, popup) {
     let marker = L.marker(coordinates).addTo(venues_map);
