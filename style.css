@@ -118,6 +118,13 @@ header { margin: 4rem 0em; }
         left: 35%;
         transform: rotate(-3deg) translate(-50%, -50%) scale(70%);
     }
+
+    #figure-bored-games {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: rotate(4deg) translate(-50%, -50%) scale(80%);
+    }
 }
 
 #map {

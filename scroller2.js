@@ -22,21 +22,31 @@ scroller2.setup({
                 show('figure-enemy')
                 hide('figure-grigg')
                 hide('figure-dodd')
+                hide('figure-bored-games')
                 break;
             case 1:
                 show('figure-enemy')
                 show('figure-grigg')
                 hide('figure-dodd')
+                hide('figure-bored-games')
                 break;
             case 2:
                 show('figure-enemy')
                 show('figure-grigg')
                 show('figure-dodd')
+                hide('figure-bored-games')
+                break;
+            case 3: 
+                show('figure-enemy')
+                show('figure-grigg')
+                show('figure-dodd')
+                show('figure-bored-games')
                 break;
             default:
                 show('figure-enemy')
                 hide('figure-grigg')
                 hide('figure-dodd')
+                hide('figure-bored-games')
                 break;
         }
     });
