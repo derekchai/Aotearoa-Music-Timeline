@@ -184,7 +184,7 @@ header { margin: 4rem 0em; }
 
 /* MARK: Timeline
  */
-#timeline {
+.timeline {
     @media screen and (max-width: 600px) {
         visibility: hidden;
     }
