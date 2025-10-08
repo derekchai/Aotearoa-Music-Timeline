@@ -1,6 +1,6 @@
 const scroller3 = scrollama();
 
-scroller2.setup({
+scroller3.setup({
         step: ".step2",
         offset: 0.5,
     })
