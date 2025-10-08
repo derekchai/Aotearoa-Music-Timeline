@@ -8,7 +8,7 @@ const OTAGO_UNIVERSITY = [-45.864566, 170.514835];
 var venues_map = new L.Map("venues_map", {
     scrollWheelZoom: false,
 })
-    .setView(BENEFICIARIES_HALL, 13)
+    .setView(BENEFICIARIES_HALL, 14)
 
 L.tileLayer(TILE_LAYER_URL, {
     maxZoom: 20,
