@@ -139,6 +139,10 @@ header { margin: 4rem 0em; }
 
 .steps {
     width: 100%;
+
+    iframe {
+        margin-top: 2em;
+    }
 }
 
 .step,
