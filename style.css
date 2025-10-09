@@ -131,6 +131,7 @@ header { margin: 4rem 0em; }
         top: 50%;
         left: 35%;
         transform: rotate(0deg) translate(-50%, -50%) scale(70%);
+        z-index: 1;
     }
 
     #figure-chills {
@@ -138,6 +139,15 @@ header { margin: 4rem 0em; }
         top: 50%;
         left: 35%;
         transform: rotate(4deg) translate(-50%, -50%) scale(70%);
+        z-index: 2;
+    }
+
+    #figure-stones {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: rotate(-8deg) translate(-50%, -60%) scale(70%);
+        z-index: 3;
     }
 }
 

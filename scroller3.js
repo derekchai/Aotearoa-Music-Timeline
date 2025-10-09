@@ -3,6 +3,7 @@ const scroller3 = scrollama();
 const image_ids = [
     'figure-verlaines',
     'figure-chills',
+    'figure-stones',
 ]
 
 scroller3.setup({
