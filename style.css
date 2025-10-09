@@ -146,7 +146,7 @@ header { margin: 4rem 0em; }
         position: absolute;
         top: 50%;
         left: 35%;
-        transform: rotate(-8deg) translate(-50%, -60%) scale(70%);
+        transform: rotate(-8deg) translate(-40%, -60%) scale(70%);
         z-index: 3;
     }
 }
