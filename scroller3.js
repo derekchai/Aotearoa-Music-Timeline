@@ -1,5 +1,10 @@
 const scroller3 = scrollama();
 
+const image_ids = [
+    'figure-verlaines',
+    'figure-chills',
+]
+
 scroller3.setup({
         step: ".step3",
         offset: 0.5,
@@ -12,4 +17,12 @@ scroller3.setup({
         }
 
         nodes[response.index].classList.add('active');
+
+        for (var i = 0; i < response.index; i++) {
+            show(image_ids[i]);
+        }
+
+        for (var i = response.index; i < image_ids.length; i++) {
+            hide(image_ids[i]);
+        }
     });
