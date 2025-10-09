@@ -1,7 +1,9 @@
-let order = [0, 1, 2, 3]
-// 0: 1977 The Enemy forms
-// 1: 1978 First Wave bands form
-// 2: TEMP
+const scroller2_image_ids = [
+    'figure-enemy',
+    'figure-grigg',
+    'figure-dodd',
+    'figure-bored-games',
+];
 
 const scroller2 = scrollama();
 scroller2.setup({
@@ -15,39 +17,14 @@ scroller2.setup({
             node.classList.remove('active')
         }
 
-        nodes[order[response.index]].classList.add('active')
-        
-        switch (response.index) {
-            case 0:
-                show('figure-enemy')
-                hide('figure-grigg')
-                hide('figure-dodd')
-                hide('figure-bored-games')
-                break;
-            case 1:
-                show('figure-enemy')
-                show('figure-grigg')
-                hide('figure-dodd')
-                hide('figure-bored-games')
-                break;
-            case 2:
-                show('figure-enemy')
-                show('figure-grigg')
-                show('figure-dodd')
-                hide('figure-bored-games')
-                break;
-            case 3: 
-                show('figure-enemy')
-                show('figure-grigg')
-                show('figure-dodd')
-                show('figure-bored-games')
-                break;
-            default:
-                show('figure-enemy')
-                hide('figure-grigg')
-                hide('figure-dodd')
-                hide('figure-bored-games')
-                break;
+        nodes[response.index].classList.add('active')
+    
+        for (var i = 0; i <= response.index; i++) {
+            show(scroller2_image_ids[i]);
+        }
+
+        for (var i = response.index + 1; i < scroller2_image_ids.length; i++) {
+            hide(scroller2_image_ids[i]);
         }
     });
 

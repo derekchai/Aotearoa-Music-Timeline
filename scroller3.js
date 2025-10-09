@@ -18,11 +18,11 @@ scroller3.setup({
 
         nodes[response.index].classList.add('active');
 
-        for (var i = 0; i < response.index; i++) {
+        for (var i = 0; i <= response.index; i++) {
             show(image_ids[i]);
         }
 
-        for (var i = response.index; i < image_ids.length; i++) {
+        for (var i = response.index + 1; i < image_ids.length; i++) {
             hide(image_ids[i]);
         }
     });
