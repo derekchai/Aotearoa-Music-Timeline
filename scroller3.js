@@ -5,6 +5,7 @@ const image_ids = [
     'figure-chills',
     'figure-stones',
     'figure-lbgp',
+    'figure-radio-one',
 ]
 
 scroller3.setup({
