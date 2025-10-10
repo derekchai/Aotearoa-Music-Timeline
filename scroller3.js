@@ -4,6 +4,7 @@ const image_ids = [
     'figure-verlaines',
     'figure-chills',
     'figure-stones',
+    'figure-lbgp',
 ]
 
 scroller3.setup({

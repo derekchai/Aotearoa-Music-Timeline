@@ -149,6 +149,14 @@ header { margin: 4rem 0em; }
         transform: rotate(-8deg) translate(-40%, -60%) scale(70%);
         z-index: 3;
     }
+
+    #figure-lbgp {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: rotate(2deg) translate(-45%, -50%) scale(70%);
+        z-index: 4;
+    }
 }
 
 #map {
