@@ -164,7 +164,7 @@ header { margin: 4rem 0em; }
         top: 50%;
         left: 35%;
         transform: rotate(2deg) translate(-45%, -50%) scale(70%);
-        z-index: 4;
+        z-index: 5;
     }
 }
 
