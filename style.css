@@ -135,12 +135,20 @@ header { margin: 4rem 0em; }
         z-index: 1;
     }
 
+    #figure-sneaky-feelings {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: rotate(-4deg) translate(-50%, -50%) scale(65%);
+        z-index: 2;
+    }
+
     #figure-chills {
         position: absolute;
         top: 50%;
         left: 35%;
         transform: rotate(4deg) translate(-50%, -50%) scale(70%);
-        z-index: 2;
+        z-index: 3;
     }
 
     #figure-stones {
@@ -148,7 +156,7 @@ header { margin: 4rem 0em; }
         top: 50%;
         left: 35%;
         transform: rotate(-8deg) translate(-40%, -60%) scale(70%);
-        z-index: 3;
+        z-index: 4;
     }
 
     #figure-lbgp {
@@ -156,7 +164,7 @@ header { margin: 4rem 0em; }
         top: 50%;
         left: 35%;
         transform: rotate(2deg) translate(-45%, -50%) scale(70%);
-        z-index: 4;
+        z-index: 5;
     }
 
     #figure-radio-one {
@@ -164,7 +172,7 @@ header { margin: 4rem 0em; }
         top: 50%;
         left: 35%;
         transform: rotate(2deg) translate(-45%, -50%) scale(70%);
-        z-index: 5;
+        z-index: 6;
     }
 }
 
