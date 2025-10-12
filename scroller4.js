@@ -4,6 +4,10 @@ const scroller4_image_ids = [
     'figure-straitjacket-fits',
 ];
 
+for (let step of document.querySelectorAll(".step4 > p")) {
+    step.textContent = "◂ " + step.textContent;
+}
+
 scroller4.setup({
         step: ".step4",
         offset: 0.5,
