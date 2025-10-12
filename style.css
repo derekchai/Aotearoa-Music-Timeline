@@ -180,6 +180,11 @@ header { margin: 4rem 0em; }
         position: absolute; top: 50%; left: 35%;
         transform: rotate(-3deg) translate(-40%, -50%) scale(90%);
     }
+
+    #figure-3ds {
+        position: absolute; top: 50%; left: 35%;
+        transform: rotate(4deg) translate(-40%, -50%) scale(90%);
+    }
 }
 
 #map {

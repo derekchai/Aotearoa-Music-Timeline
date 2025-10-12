@@ -3,6 +3,7 @@ const scroller4 = scrollama();
 const scroller4_image_ids = [
     'figure-straitjacket-fits',
     'figure-dead-c',
+    'figure-3ds',
 ];
 
 // Add character to start of attribution paragraph
