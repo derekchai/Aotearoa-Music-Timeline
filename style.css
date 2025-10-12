@@ -28,6 +28,7 @@ a {
 
 .main {
     margin: auto;
+    margin-bottom: 8em;
     width: 30rem;
 
     > p { text-indent: 2rem; }
