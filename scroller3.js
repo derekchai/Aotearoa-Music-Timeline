@@ -6,6 +6,7 @@ const image_ids = [
     'figure-chills',
     'figure-stones',
     'figure-flying-nun',
+    'figure-bats',
     'figure-lbgp',
     'figure-radio-one',
 ]

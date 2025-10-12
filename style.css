@@ -179,12 +179,20 @@ header { margin: 4rem 0em; }
         z-index: 5;
     }
 
+    #figure-bats {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: rotate(2deg) translate(-40%, -50%) scale(80%);
+        z-index: 6;
+    }
+
     #figure-lbgp {
         position: absolute;
         top: 50%;
         left: 35%;
         transform: rotate(2deg) translate(-45%, -50%) scale(70%);
-        z-index: 6;
+        z-index: 7;
     }
 
     #figure-radio-one {
@@ -192,7 +200,7 @@ header { margin: 4rem 0em; }
         top: 50%;
         left: 35%;
         transform: rotate(2deg) translate(-45%, -50%) scale(70%);
-        z-index: 7;
+        z-index: 8;
     }
 }
 
