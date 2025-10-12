@@ -2,6 +2,7 @@ const scroller4 = scrollama();
 
 const scroller4_image_ids = [
     'figure-straitjacket-fits',
+    'figure-dead-c',
 ];
 
 for (let step of document.querySelectorAll(".step4 > p")) {
