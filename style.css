@@ -170,6 +170,11 @@ header { margin: 4rem 0em; }
         position: absolute; top: 50%; left: 35%;
         transform: rotate(2deg) translate(-45%, -50%) scale(70%);
     }
+
+    #figure-straitjacket-fits {
+        position: absolute; top: 50%; left: 35%;
+        transform: rotate(0deg) translate(-45%, -50%) scale(70%);
+    }
 }
 
 #map {

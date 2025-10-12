@@ -1,5 +1,9 @@
 const scroller4 = scrollama();
 
+const scroller4_image_ids = [
+    'figure-straitjacket-fits',
+];
+
 scroller4.setup({
         step: ".step4",
         offset: 0.5,
@@ -13,11 +17,11 @@ scroller4.setup({
 
         nodes[response.index].classList.add('active');
 
-        // for (var i = 0; i <= response.index; i++) {
-        //     show(image_ids[i]);
-        // }
+        for (var i = 0; i <= response.index; i++) {
+            show(scroller4_image_ids[i]);
+        }
 
-        // for (var i = response.index + 1; i < image_ids.length; i++) {
-        //     hide(image_ids[i]);
-        // }
+        for (var i = response.index + 1; i < scroller4_image_ids.length; i++) {
+            hide(scroller4_image_ids[i]);
+        }
     });
