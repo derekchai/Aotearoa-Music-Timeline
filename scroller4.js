@@ -6,6 +6,7 @@ const scroller4_image_ids = [
     'figure-3ds',
     'figure-bike',
     'figure-hdu',
+    'figure-scarfies',
 ];
 
 // Add character to start of attribution paragraph

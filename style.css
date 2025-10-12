@@ -195,6 +195,11 @@ header { margin: 4rem 0em; }
         position: absolute; top: 50%; left: 35%;
         transform: rotate(8deg) translate(-40%, -50%) scale(85%);
     }
+    
+    #figure-scarfies {
+        position: absolute; top: 50%; left: 35%;
+        transform: rotate(0deg) translate(-40%, -50%) scale(90%);
+    }
 }
 
 #map {
