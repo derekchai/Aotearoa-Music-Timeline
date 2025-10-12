@@ -216,7 +216,8 @@ header { margin: 4rem 0em; }
 
 .step,
 .step2,
-.step3 {
+.step3,
+.step4 {
     position: relative;
     height: 100vh;
 
@@ -246,14 +247,16 @@ header { margin: 4rem 0em; }
 }
 
 .step2 span,
-.step3 span {
+.step3 span,
+.step4 span {
     @media screen and (max-width: 600px) {
         background-color: black;
     }
 }
 
 .step2 > p,
-.step3 > p {
+.step3 > p,
+.step4 > p {
     font-style: italic;
     font-size: smaller;
 }
@@ -273,7 +276,8 @@ header { margin: 4rem 0em; }
     z-index: 10;
 
     .timeline-node,
-    .timeline3-node {
+    .timeline3-node,
+    .timeline4-node {
         height: 10px;
         text-align: left;
         font-size: small;
@@ -289,7 +293,8 @@ header { margin: 4rem 0em; }
     }
 
     .timeline-node.active span,
-    .timeline3-node.active span {
+    .timeline3-node.active span,
+    .timeline4-node.active span {
         background-color: yellow;
         color: black;
         opacity: 1;
