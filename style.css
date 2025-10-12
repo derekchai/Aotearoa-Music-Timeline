@@ -190,6 +190,11 @@ header { margin: 4rem 0em; }
         position: absolute; top: 50%; left: 35%;
         transform: rotate(-1deg) translate(-40%, -50%) scale(85%);
     }
+
+    #figure-hdu {
+        position: absolute; top: 50%; left: 35%;
+        transform: rotate(8deg) translate(-40%, -50%) scale(85%);
+    }
 }
 
 #map {
