@@ -5,8 +5,19 @@ const scroller4_image_ids = [
     'figure-dead-c',
 ];
 
+// Add character to start of attribution paragraph
 for (let step of document.querySelectorAll(".step4 > p")) {
     step.textContent = "◂ " + step.textContent;
+}
+
+// Set Z indices and hidden/visibile
+for (let i = 0; i < scroller4_image_ids.length; i++) {
+    let image = document.getElementById(scroller4_image_ids[i]);
+    image.style.zIndex = i + 1;
+
+    if (i > 0) {
+        image.classList.add("hidden");
+    }
 }
 
 scroller4.setup({

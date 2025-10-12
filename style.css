@@ -173,7 +173,12 @@ header { margin: 4rem 0em; }
 
     #figure-straitjacket-fits {
         position: absolute; top: 50%; left: 35%;
-        transform: rotate(0deg) translate(-45%, -50%) scale(70%);
+        transform: rotate(2deg) translate(-45%, -50%) scale(70%);
+    }
+
+    #figure-dead-c {
+        position: absolute; top: 50%; left: 35%;
+        transform: rotate(-3deg) translate(-40%, -50%) scale(90%);
     }
 }
 
