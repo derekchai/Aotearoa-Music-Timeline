@@ -112,86 +112,62 @@ header { margin: 4rem 0em; }
     }
 
     #figure-enemy {
-        position: absolute;
-        top: 40%;
-        left: 35%;
+        position: absolute; top: 40%; left: 35%;
         transform: rotate(-5deg) translate(-50%, -50%);
     }
 
     #figure-grigg {
-        position: absolute;
-        top: 50%;
-        left: 35%;
+        position: absolute; top: 50%; left: 35%;
         transform: rotate(6deg) translate(-50%, -50%);
     }
 
     #figure-dodd {
-        position: absolute;
-        top: 50%;
-        left: 35%;
+        position: absolute; top: 50%; left: 35%;
         transform: rotate(-3deg) translate(-50%, -50%) scale(70%);
     }
 
     #figure-bored-games {
-        position: absolute;
-        top: 50%;
-        left: 35%;
+        position: absolute; top: 50%; left: 35%;
         transform: rotate(4deg) translate(-50%, -50%) scale(80%);
     }
 
     #figure-verlaines {
-        position: absolute;
-        top: 50%;
-        left: 35%;
+        position: absolute; top: 50%; left: 35%;
         transform: rotate(0deg) translate(-50%, -50%) scale(70%);
     }
 
     #figure-sneaky-feelings {
-        position: absolute;
-        top: 50%;
-        left: 35%;
+        position: absolute; top: 50%; left: 35%;
         transform: rotate(-4deg) translate(-50%, -50%) scale(65%);
     }
 
     #figure-chills {
-        position: absolute;
-        top: 50%;
-        left: 35%;
+        position: absolute; top: 50%; left: 35%;
         transform: rotate(4deg) translate(-50%, -50%) scale(70%);
     }
 
     #figure-stones {
-        position: absolute;
-        top: 50%;
-        left: 35%;
+        position: absolute; top: 50%; left: 35%;
         transform: rotate(-8deg) translate(-40%, -60%) scale(70%);
     }
 
     #figure-flying-nun {
-        position: absolute;
-        top: 50%;
-        left: 35%;
+        position: absolute; top: 50%; left: 35%;
         transform: rotate(8deg) translate(-40%, -50%) scale(80%);
     }
 
     #figure-bats {
-        position: absolute;
-        top: 50%;
-        left: 35%;
+        position: absolute; top: 50%; left: 35%;
         transform: rotate(2deg) translate(-40%, -50%) scale(80%);
     }
 
     #figure-lbgp {
-        position: absolute;
-        top: 50%;
-        left: 35%;
+        position: absolute; top: 50%; left: 35%;
         transform: rotate(2deg) translate(-45%, -50%) scale(70%);
     }
 
     #figure-radio-one {
-        position: absolute;
-        top: 50%;
-        left: 35%;
+        position: absolute; top: 50%; left: 35%;
         transform: rotate(2deg) translate(-45%, -50%) scale(70%);
     }
 }
