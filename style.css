@@ -23,6 +23,7 @@ body {
 
 a {
     color: white;
+    word-wrap: break-word;
 }
 
 .main {
