@@ -21,6 +21,10 @@ body {
     font-size: medium;
 }
 
+a {
+    color: white;
+}
+
 .main {
     margin: auto;
     width: 30rem;
