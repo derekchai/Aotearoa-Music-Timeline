@@ -4,6 +4,7 @@ const scroller4_image_ids = [
     'figure-straitjacket-fits',
     'figure-dead-c',
     'figure-3ds',
+    'figure-bike',
 ];
 
 // Add character to start of attribution paragraph
